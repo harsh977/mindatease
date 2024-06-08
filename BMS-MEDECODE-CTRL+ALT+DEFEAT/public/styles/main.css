@@ -1,0 +1,83 @@
+body {
+    background: linear-gradient(to right, #f4f4ff, #e5f2ff);
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  h1 {
+    color: #292929;
+    font-size: 4em;
+    margin-bottom: 0.5em;
+  }
+  
+  h2 {
+    color: #292929;
+    font-size: 1.5em;
+    margin-bottom: 1em;
+  }
+  
+  p {
+    color: #292929;
+    font-size: 1.2em;
+    line-height: 1.6;
+  }
+  
+  button {
+    background-color: #667eea;
+    color: #fff;
+    padding: 1em 2em;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #4d63e0;
+  }
+  
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .container {
+    animation: slideUp 1s ease-in-out;
+  }
+  
+  button {
+    animation: slideUp 1s ease-in-out;
+    animation-delay: 0.5s;
+  }
+
+  .centered-quote {
+    text-align: center; /* Horizontally center the content */
+    margin: 0 auto; /* Add some top and bottom margin for spacing */
+    padding: 20px; /* Add some padding for visual separation */
+    border: 1px solid #ddd; /* Add a subtle border */
+    border-radius: 5px; /* Add rounded corners for a softer look */
+    font-family: sans-serif; /* Use a clean, modern font */
+  }
+  
+  h2 {
+    font-size: 1.5em; /* Adjust font size for readability */
+    font-weight: bold; /* Make the quote stand out */
+  }
+  
